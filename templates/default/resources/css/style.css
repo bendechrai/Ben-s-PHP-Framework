@@ -1,0 +1,269 @@
+html, body {
+	font-family: "Helvetica", sans-serif;
+	font-size: 92%;
+	padding: 0;
+	margin: 0;
+}
+
+del {
+	text-decoration: none;
+	color: #888;
+}
+
+
+
+/************************************************************
+ * H E A D E R
+ */
+
+#header {
+	height: 100px;
+}
+
+#header h1 {
+	margin: 0;
+	line-height: 70px;
+	padding-left: 20px;
+}
+#header h2 {
+	margin: 0;
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+
+
+
+
+/************************************************************
+ * N A V I G A T I O N
+ */
+
+#nav,
+div.tabs {
+	margin-top: 30px;
+	border-bottom: 1px solid #000;
+}
+
+#nav ul,
+div.tabs ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 21px;
+}
+
+#nav ul li,
+div.tabs ul li {
+	float: left;
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+
+#nav ul li a,
+div.tabs ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 2px 20px;
+	color: #000;
+	border: 1px solid #000;
+	border-bottom: 1px solid #000;
+	height: 16px;
+}
+
+#nav ul li.current a,
+div.tabs ul li a.active {
+	color: #3e77c6;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	height: 16px;
+}
+
+#nav ul li a:hover,
+div.tabs ul li a:hover {
+	background-color: #ddd;
+}
+
+#nav ul li.current a:hover,
+div.tabs ul li a.active:hover {
+	background-color: #fff;
+}
+
+div.tabcontents {
+	clear: both;
+}
+
+#nav #logout {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#nav #logout a,
+#nav #logout a:hover {
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+	color: #00f;
+}
+
+
+
+
+
+/************************************************************
+ * C O N T E N T
+ */
+
+#contentwrap {
+	padding: 0 20px;
+}
+
+pre {
+	background-color: #ddd;
+	border: 1px solid #555;
+	padding: 1em;
+	margin-left: 1em;
+}
+
+
+
+
+/* MESSAGES */
+#flash_messages {
+	opacity: 0;
+	padding: 10px 20px 0 20px;
+	position: absolute;
+	top: 160px;
+	left: 50px;
+	right: 50px;
+	background: transparent url(../images/blank_80.png);
+	border: 1px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#flash_messages p.close {
+	margin: 0;
+	padding: 0 0 10px;
+	text-align: right;
+}
+
+#flash_messages #flash_info,
+#flash_messages #flash_success,
+#flash_messages #flash_warning {
+	border: 2px solid #003a7f;
+	background-color: #8fc2ff;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#flash_messages #flash_success {
+	background-color: #9fff8f;
+	border-color: #093f00;
+}
+
+#flash_messages #flash_warning {
+	background-color: #ff9fa3;
+	border-color: #7f0005;
+}
+
+/* TABLES */
+
+#content table {
+	border-collapse: collapse;
+	margin-top: 1em;
+}
+
+#content table td, #content table th {
+	border: 1px solid #000;
+	padding: 2px;
+	text-align: left;
+}
+
+#content .tabcontents table td, #content .tabcontents table th {
+	border: none;
+	padding: 2px 10px 2px 0;
+}
+
+#content table td.numeric {
+	text-align: center;
+}
+
+#content table.sortable th.sortable {
+	padding-left: 14px;
+	background: transparent url(../images/icon-table-sort.png) no-repeat 3px 4px;
+}
+
+#content table.sortable th.sortable.sortedASC {
+	background: transparent url(../images/icon-table-sort-asc.png) no-repeat 3px 0px;
+}
+
+#content table.sortable th.sortable.sortedDESC {
+	background: transparent url(../images/icon-table-sort-desc.png) no-repeat 3px 6px;
+}
+
+
+/* FORMS */
+
+fieldset {
+	border: none;
+	clear: both;
+}
+
+fieldset legend {
+	display: none;
+}
+
+form p {
+	clear: both;
+}
+
+form p label {
+	float: left;
+	width: 200px;
+}
+
+form p label.nofloat {
+	float: none;
+}
+
+
+
+
+
+/************************************************************
+ * C A M P A I G N   E D I T   P A G E
+ */
+
+#custom-fields-default,
+#custom-fields-additional {
+	float: left;
+	width: 25em;
+}
+
+#custom-fields-additional label {
+	margin-right: 1em;
+}
+
+
+
+
+
+/************************************************************
+ * F O O T E R
+ */
+
+#footer {
+	border-top: 1px solid #000;
+	margin-top: 20px;
+}
+
+#footer p {
+	text-align: right;
+	padding: 0 20px;
+}
